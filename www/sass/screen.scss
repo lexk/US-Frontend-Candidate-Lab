@@ -44,23 +44,43 @@ body {
   height: 100%;
 }
 
-img { 
-    position: absolute; 
+.main-content {
+  width: 818px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -409px;
 }
+.card {
+  position: absolute; 
+}
+
 #title {
-    left: 17px;
-    top: 25px;
-    z-index: 2;
+  left: 17px;
+  top: 25px;
+  z-index: 2;
 }
 #description {
-    left: 259px;
-    top: 67px;
-    z-index: 1;
+  left: 259px;
+  top: 67px;
+  z-index: 1;
 }
 #date {
-    left: 525px;
-    top: 9px;
+  left: 525px;
+  top: 9px;
 }
+#card-shoe {
+  bottom: -158px;
+  left: 445px;
+  z-index: 1;
+}
+#card-dark {
+  top: 259px;
+  right: -260px;
+  z-index: 1;
+}
+
 
 #invitation {
     background-color: #fff;
