@@ -6,12 +6,42 @@
 /* ==========================================================================
    Default Screen styles.
    ========================================================================== */
+* {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
 
 body { 
-    background: url(../img/woodgrain.jpg) repeat; 
-    font-family: "Helvetica", "Arial", sans-serif;
-    height: 600px; 
-    width: 888px; 
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.wood-background {
+  background-image: url(../img/woodgrain.jpg); 
+  background-repeat: repeat;
+  background-position: 0 0;
+} 
+
+.page {
+  position: relative;
+  min-width: 818px;
+  min-height: 600px;
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
 }
 
 img { 

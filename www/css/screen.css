@@ -717,40 +717,77 @@ textarea {
 /* ==========================================================================
    Default Screen styles.
    ========================================================================== */
-/* line 10, ../sass/screen.scss */
-body {
-  background: url(../img/woodgrain.jpg) repeat;
-  font-family: "Helvetica", "Arial", sans-serif;
-  height: 600px;
-  width: 888px;
+/* line 9, ../sass/screen.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 20, ../sass/screen.scss */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* line 24, ../sass/screen.scss */
+.background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* line 32, ../sass/screen.scss */
+.wood-background {
+  background-image: url(../img/woodgrain.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+/* line 38, ../sass/screen.scss */
+.page {
+  position: relative;
+  min-width: 818px;
+  min-height: 600px;
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 47, ../sass/screen.scss */
 img {
   position: absolute;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #title {
   left: 17px;
   top: 25px;
   z-index: 2;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 #description {
   left: 259px;
   top: 67px;
   z-index: 1;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #date {
   left: 525px;
   top: 9px;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #invitation {
   background-color: #fff;
   bottom: 0;
@@ -761,13 +798,13 @@ img {
   z-index: 3;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 #invitation h1 {
   font-size: 30px;
   margin-bottom: 15px;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #invitation a {
   background-color: #393939;
   color: #fff;
@@ -779,7 +816,7 @@ img {
   text-decoration: none;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #invitation a:hover {
   background-color: #f78b36;
 }
