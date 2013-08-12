@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/screen.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -34,19 +35,34 @@
         <div class="invitation">
           <h1 class="invitation-title">Stop by for a minute.</h1>
           <p class="invitation-body">Celebrate one of the most influential products of our time that for 60 years did what no other invention could do. Learn about the man behind the camera who influenced the likes of Steve Jobs and Instagram &amp; expose yourself to instant gratification by snapping a few candid shots of your own.</p>
-          <a class="inline-btn yes-btn" href="#">YES, I'M COMING</a>
-          <a class="inline-btn no-btn" href="#">NO, NOT THIS TIME</a>
+          <a class="inline-btn yes-btn jsYesBtn" href="#">YES, I'M COMING</a>
+          <a class="inline-btn no-btn jsNoBtn" href="#">NO, NOT THIS TIME</a>
         </div>
-
 
       </div>
 
     </div>
 
+    <div class='overlay' id='jsOverlay'>
+      <div class='overlay-content jsOverlayContent'>
+        <h1>hi</h1>
+      </div>
+      <div class='overlay-cover jsCloseOverlay'></div>
+    </div>
+
+    <script type='js/template' id='jsRsvpConfirmation'>
+        <h3>You <%=it.attend%> the event.</h3>
+        <div>Is this correct?</div>
+        <div class='tac'>
+          <a class='inline-btn yest-btn jsConfirmationYes'>Yes</a>
+          <a class='inline-btn no-btn jsCloseOverlay'>No</a>
+        </div>
+    </script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="js/www.min.js"></script>
 
   </body>
 </html>
