@@ -33,9 +33,9 @@ module.exports = function(grunt) {
           module: true,
           document: true
         },
-        laxbreak: true,
-        immed: true,
-        evil: true
+        ignores: [
+          'www/js/libs/dot.js'
+        ]
       }
     },
     watch: {
