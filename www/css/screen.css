@@ -977,9 +977,10 @@ body {
   left: 0;
   right: 0;
   z-index: 4;
+  display: none;
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .overlay-cover {
   position: fixed;
   top: 0;
@@ -992,10 +993,43 @@ body {
   background: rgba(0, 0, 0, 0.65);
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .overlay-content {
   position: absolute;
-  padding: 10px;
   z-index: 21;
-  top: 0;
+  top: 10px;
+  width: 550px;
+  margin: 10px;
+  padding: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  border: solid 1px #777;
+}
+
+/* line 185, ../sass/screen.scss */
+.confirm-title {
+  margin: 0 0 10px 0;
+}
+
+/* line 188, ../sass/screen.scss */
+.confirm-desc {
+  margin: 0 0 20px 0;
+}
+
+/* line 191, ../sass/screen.scss */
+.yes-confirm {
+  background-color: #00A425;
+  margin-right: 25px;
+  color: #fff;
+}
+
+/* line 196, ../sass/screen.scss */
+.no-confirm {
+  background-color: #DE0000;
+  color: #fff;
 }
