@@ -34,8 +34,28 @@ Submit a pull request when you are finished and satisfied with your work.
 
 # Notes
 
-Use this area to communicate any thought processes, ideas, or challenges you encountered.
+### Card Images
+- ideally: work with designer to get non-rotated version of images, cut as jpegs, rotate with css
+- currently: images sliced as pngs because it is more flexible to update/change
+  - compressed images: TABLE OF IMAGE DIFFS
 
-*
-*
-*
+### CSS
+- Convert to SASS (Compass)
+  - include rgba gem for semi-transparent background support
+- Created partials for base, chromeframe, helper, and normalize
+- removed uses of IDs -- IDs are for document fragments
+- perfer more of a class dependent css styling (more like BEM, oocss, etc.)
+
+### Design
+- no indication of what it looks like beyond 818px.
+- no indication of hover states (no layer comps)
+
+### Semantics
+- html5 elements (main, section, aside) creates more semantic meaning
+- microformat data
+
+### JS
+- Leveraging Grunt to compile the javascript
+  - leveraging jshint in a watch task to monitor code during development
+  - removed a js request
+- showcasing use of js templating through doT.js
