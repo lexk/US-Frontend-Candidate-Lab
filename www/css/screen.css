@@ -818,6 +818,11 @@ body {
 }
 
 /* line 30, ../sass/screen.scss */
+.microdata {
+  display: none;
+}
+
+/* line 34, ../sass/screen.scss */
 .background {
   position: fixed;
   left: 0;
@@ -827,14 +832,14 @@ body {
   z-index: 0;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .wood-background {
   background-image: url(../img/woodgrain.jpg);
   background-repeat: repeat;
   background-position: 0 0;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .page {
   position: relative;
   min-width: 818px;
@@ -844,7 +849,7 @@ body {
   height: 100%;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .main-content {
   width: 818px;
   height: 600px;
@@ -854,46 +859,46 @@ body {
   margin: -300px 0 0 -409px;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .card {
   position: absolute;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 #title {
   left: 17px;
   top: 25px;
   z-index: 2;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 #description {
   left: 259px;
   top: 67px;
   z-index: 1;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 #date {
   left: 525px;
   top: 9px;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #card-shoe {
   bottom: -158px;
   left: 445px;
   z-index: 1;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #card-dark {
   top: 259px;
   right: -260px;
   z-index: 1;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .invitation {
   background-image: url(../img/footer-background.png);
   background-repeat: no-repeat;
@@ -907,7 +912,7 @@ body {
   padding: 13px 185px 0 30px;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .invitation-title {
   font-size: 30px;
   margin: 0;
@@ -916,7 +921,7 @@ body {
   padding: 20px 0 0 0;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .invitation-body {
   margin: 12px 0;
   font-size: 12px;
@@ -924,7 +929,7 @@ body {
   line-height: 18px;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 .inline-btn {
   display: inline-block;
   padding: 15px 25px;
@@ -937,7 +942,7 @@ body {
   border-radius: 3px;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .yes-btn {
   filter: none;
   background: #f7993e;
@@ -954,7 +959,7 @@ body {
   font-size: 16px;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .no-btn {
   background: #3b3b3b;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNiM2IzYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMTMxMzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -969,7 +974,7 @@ body {
   font-size: 16px;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -980,7 +985,7 @@ body {
   display: none;
 }
 
-/* line 162, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .overlay-cover {
   position: fixed;
   top: 0;
@@ -993,7 +998,7 @@ body {
   background: rgba(0, 0, 0, 0.65);
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .overlay-content {
   position: absolute;
   z-index: 21;
@@ -1011,24 +1016,24 @@ body {
   border: solid 1px #777;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .confirm-title {
   margin: 0 0 10px 0;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .confirm-desc {
   margin: 0 0 20px 0;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .yes-confirm {
   background-color: #00A425;
   margin-right: 25px;
   color: #fff;
 }
 
-/* line 196, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .no-confirm {
   background-color: #DE0000;
   color: #fff;

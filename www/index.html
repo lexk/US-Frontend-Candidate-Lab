@@ -7,9 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>MDC Partners - Polaroid Celebration</title>
-    <meta name="description" content="">
+    <meta name="description" content="October 30th - The MDC Innovation Centre, 745 5th Ave., 19th Floor">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <![endif]-->
 
     <link rel="stylesheet" href="css/screen.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -24,7 +26,7 @@
 
     <div class="page">
 
-      <div class="main-content">
+      <main class="main-content">
 
         <img class="card" id="title" src="img/card-title.png" alt="MDC Partners - Polaroid Celebration" />
         <img class="card" id="description" src="img/card-description.png" alt="Instant - The Story of Polaroid" />
@@ -32,21 +34,21 @@
         <img class="card" id="card-shoe" src="img/card-shoe.png" alt="shoe" />
         <img class="card" id="card-dark" src="img/card-dark.png" alt="dark" />
 
-        <div class="invitation">
+        <section class="invitation">
           <h1 class="invitation-title">Stop by for a minute.</h1>
           <p class="invitation-body">Celebrate one of the most influential products of our time that for 60 years did what no other invention could do. Learn about the man behind the camera who influenced the likes of Steve Jobs and Instagram &amp; expose yourself to instant gratification by snapping a few candid shots of your own.</p>
           <a class="inline-btn yes-btn jsRsvpBtn" href="#" data-attend="will">YES, I'M COMING</a>
           <a class="inline-btn no-btn jsRsvpBtn" href="#" data-attend="won't">NO, NOT THIS TIME</a>
-        </div>
+        </section>
 
-      </div>
+      </main>
 
     </div>
 
-    <div class='overlay' id='jsOverlay'>
+    <aside class='overlay' id='jsOverlay'>
       <div class='overlay-content jsOverlayContent'></div>
       <div class='overlay-cover jsCloseOverlay'></div>
-    </div>
+    </aside>
 
     <script type='js/template' id='jsRsvpConfirmation'>
       <h3 class='confirm-title'>You {{=it.attend }} be attending the event.</h3>
@@ -57,10 +59,26 @@
         </div>
     </script>
 
+    <div class='microdata'>
+      <div itemscope itemtype="http://schema.org/BusinessEvent">
+        <div itemprop="name"><strong>MDC Partners - Polaroid Celebration</strong></div>
+        <div itemprop="description">October 30th - The MDC Innovation Centre, 745 5th Ave., 19th Floor</div>
+        <div><meta itemprop="startDate" content="2013-10-30T12:00">Starts: 10/30/2013 12:00PM</div>
+        <meta itemprop="endDate" content="2013-10-30:00.000">Ends: 2013-10-30:00.000
+        <meta itemprop="duration" content="0000-00-00T01:00">Duration: 01:00
+      </div>
+      <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+        <div itemprop="streetAddress">745 5th Avenue</div>
+        <div><span itemprop="addressLocality">New York</span>, <span itemprop="addressRegion">New York</span></div><div itemprop="postalCode">10022</div>
+        <div itemprop="addressCountry">United States</div>
+      </div>
+    </div>
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 
-    <script src="js/www.js"></script>
+    <script src="js/www.min.js"></script>
 
   </body>
 </html>
